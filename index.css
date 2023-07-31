@@ -1,0 +1,220 @@
+/*Global*/
+::-moz-selection { /* Code for Firefox */
+	color: white;
+	background: #4D00E2;
+}
+::selection {
+	color: white;
+	background: #4D00E2;
+}
+
+div.id {
+	margin: 20px;
+	background-color: whitesmoke;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 20px;
+	width: 400px;
+	height: 200px;
+	display: block;
+	position:fixed;
+	left: 0;
+	top: 0;
+	box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+div.id img {
+	width: 155px;
+	height: 155px;
+	float: left;
+	margin-right: 10px;
+}
+
+h1.name {
+	color: white;
+	background-color: black;
+	padding: 10px;
+	font-weight: bold;
+}
+
+div.id p {
+	display: block;
+	margin-top: 10px;
+}
+
+div.id p, div.id h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p#header {
+	width:100%;
+}
+
+p span.number {
+	float: left;
+}
+
+p span.date {
+	float: right;
+}
+
+div.post h1 {
+	width: 100%;
+}
+
+div.post p, div.post h1, div.post a, div.post ul li, div.post ol li {
+    /*font-family: 'Satisfy', cursive;*/    
+    font-family: 'Kalam', cursive;
+}
+
+div.post {
+	/*margin-bottom: 2px;
+	margin-left: 2px;*/
+	border-bottom: 2px solid whitesmoke;
+	border-left: 2px solid whitesmoke;
+	float: left;
+	width: 300px;
+	height: 300px;
+	padding: 25px;
+	/*box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);*/
+}
+
+div.stuff {
+	height: 235px;
+}
+
+a.button {
+
+}
+
+div.socials {
+	position: fixed;
+	display: block;
+	margin-top: 250px;
+	margin-left: 20px;
+}
+
+div.social {
+	float: left;
+	border-radius: 100%;
+	border: 2px solid black;
+	padding: 10px;
+	margin-right: 10px;
+	background-color: whitesmoke;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    height: 44px;
+    width: 44px;
+}
+
+div.social:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+div.social:hover i {
+	color: whitesmoke;
+}
+
+div.social::before {
+	Content: "";
+	height: 32px;
+	width: 1px;
+	border: 1px solid black;
+	position: absolute;
+	display: block;
+	margin-top: -43px;
+	margin-left: 10px;
+	z-index: -20;
+	/*box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);*/
+}
+
+div.social i {
+	color: black;
+	font-size: 15pt;
+}
+
+ul {
+	list-style: inside;
+}
+
+ul li::before {
+}
+
+ol {
+	list-style: inside upper-roman;
+}
+
+div.post.image::before, div.post.gallery::before, div.post.audio::before, div.post.video::before {
+	Content: " ";
+	display: block;
+	height: 80px;
+	width: 20px;
+	border-radius: 10px;
+	border: 2px solid black;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 10px;
+	transform: rotate(90deg);
+}
+
+div.post.image::after, div.post.gallery::after, div.post.audio::after, div.post.video::after {
+	Content: " ";
+	display: block;
+	height: 40px;
+	width: 14px;
+	border-radius: 0 0 10px 10px;
+	border-bottom: 2px solid black;
+    border-left: 2px solid black;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: -220px;
+	transform: rotate(90deg);
+}
+
+div.post.text {
+	background-color: orange;
+}
+
+div.post.list {
+	background-color: yellow;
+}
+
+div.post.video {
+	background-color: skyblue;
+}
+
+div.post.audio {
+	background-color: violet;
+}
+
+div.post.image {
+	background-color: lightgreen;
+}
+
+div.post.gallery {
+	background-color: lightpink;
+}
+
+body {
+	background-color: whitesmoke;
+}
+
+div.content {
+	width: 900px;
+	position: absolute;
+	right: 0;
+}
+
+div.preview {
+	display: none;
+}
+
+
+/*Large devices*/
+@media (max-width: 568px) {	
+	
+}
+@media (min-width: 768px) {	
+
+
+}

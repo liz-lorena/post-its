@@ -1,0 +1,62 @@
+# Site Info
+title:              "Cookies & Coffee | Theme by Lys"
+description:        "A static jekyll theme by Lys"
+keywords:           "web design, portfolio, blog, jekyll, theme"
+
+#Custom Settings
+avatar: "/img/logos/cozymaus-2020-transparent-2.png"
+name: "Iris of Lys"
+bio: "Web Designer <br><br> This is my cute lil website theme called Cookies & Coffee. Hope you like it."
+#theme: 
+
+# Author Info
+author_name:        "Iris of Lys"
+author_email:       lys@irisoflys.com
+github_username:    irisoflys
+twitter_username:   irisoflys
+instagram_username: ""
+youtube_username:   ""
+
+
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /posts/:title # Post permalink
+timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+language:           en-US
+
+# Pagination Settings
+paginate_path: "/pg-:num/"
+paginate: 5
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: irisoflys
+
+# Site Build
+highlighter: rouge
+markdown: kramdown
+gems:
+  - jekyll-sitemap
+  - tzinfo
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:          "posts"
+    values:
+      layout:        "post"

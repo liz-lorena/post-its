@@ -1,0 +1,24 @@
+<div class="post {{ post.type }}" title="{{ post.title }}">
+    <div class="paperclip"></div>
+      <div class="stuff">
+        <p id="header"><span class="number">Post #{{ total }}</span> <span class="date">{{ post.date | date: "%d %B %Y" }}</span></p>
+        <br>
+        <h1>{{ post.title }}</h1>
+        <br>
+        <div>{{ post.content }}</div>
+</div>
+  <a class="button">Read more →</a>
+</div>
+
+      
+
+<div class="preview">
+    
+        <!--<img src="{{ post.img }}" class="img-fluid">-->
+        <div class="header">
+            <p class="date">{{ post.date | date: "%d %B %Y" }}</p>
+                <h1>{{ post.title }}</h1>
+        </div>
+        <div class="content">{{ post.content }}</div>
+
+</div>

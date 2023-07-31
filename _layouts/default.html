@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="{{ site.description }}">
+<meta name="keywords" content="{{ site.keywords }}">
+<meta name="author" content="{{ site.author_name }}">
+<meta name="twitter" content="{{ site.twitter_username }}">
+<meta name="github" content="{{ site.github_username }}">
+<meta name="instagram" content="{{ site.instagram_username }}">
+
+
+<title>{{ site.title }} | {{ page.title }}</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Kalam|Roboto&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<script src="//static.tumblr.com/ihhnoee/12Cotb0p2/jquery.style-my-tooltips.js"></script>
+
+<script>
+  (function($){
+    $(document).ready(function(){
+      $("a[title]").style_my_tooltips({
+        tip_follows_cursor:false,
+        tip_delay_time:100,
+        tip_fade_speed:300,
+        attribute:"title"
+      });
+    });
+  })(jQuery);
+</script>
+
+<script>
+  $(document).ready(function(){
+      $("span.all").click(function(){
+        $("div.post").removeClass("hide");
+      });
+      $("a.hats").click(function(){
+        $("div.post:not([hats])").addClass("hide");
+        $("div.post.hats").removeClass("hide");
+      });
+      $("a.tops").click(function(){
+        $("div.post:not([tops])").addClass("hide");
+        $("div.post.tops").removeClass("hide");
+      });
+      $("a.bottoms").click(function(){
+        $("div.post:not([bottoms])").addClass("hide");
+        $("div.post.bottoms").removeClass("hide");
+      });
+      $("a.accessories").click(function(){
+        $("div.post:not([accessories])").addClass("hide");
+        $("div.post.accessories").removeClass("hide");
+      });
+      $("a.plushies").click(function(){
+        $("div.post:not([plushies])").addClass("hide");
+        $("div.post.plushies").removeClass("hide");
+      });
+      $("a.games").click(function(){
+        $("div.post:not([games])").addClass("hide");
+        $("div.post.games").removeClass("hide");
+      });
+      $("a.peripherals").click(function(){
+        $("div.post:not([peripherals])").addClass("hide");
+        $("div.post.peripherals").removeClass("hide");
+      });
+    });
+</script>
+
+<link href="{{ site.url }}/post-its/cssreset.css" rel="stylesheet">
+<link href="{{ site.url }}/post-its/index.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.avatar }}">
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+	<div class="id">
+
+    <img src="{{ site.avatar }}">
+    <h1 class="name">{{ site.name }}</h1>
+    <p>
+      {{ site.bio }}
+    </p>
+
+
+	</div>
+
+    <div class="socials">
+
+      {% if site.twitter_username != "" %}
+
+      <a href="http://twitter.com/{{ site.twitter_username }}" target="_blank" ><div class="social" title="Twitter"><i class="fab fa-twitter"></i></div></a>
+
+      {% endif %}
+
+      {% if site.instagram_username != "" %}
+
+      <a href="http://instagram.com/{{ site.instagram_username }}" target="_blank" ><div class="social" title="Instagram"><i class="fab fa-instagram"></i></div></a> 
+
+      {% endif %}
+
+      {% if site.github_username != "" %}
+
+      <a href="http://github.com/{{ site.github_username }}" target="_blank" ><div class="social" title="Github"><i class="fab fa-github"></i></div></a>
+
+      {% endif %}
+
+      {% if site.youtube_username != "" %}
+
+      <div class="social" title="YouTube"><a href="http://youtube.com/{{ site.youtube_username }}" target="_blank" ><i class="fab fa-youtube"></i></a></div> 
+
+      {% endif %}
+
+      {% if site.author_email != "" %}
+
+      <a href="mailto:{{ site.author_email }}" target="_blank" ><div class="social" title="Contact Me"><i class="fas fa-envelope"></i></div></a>
+
+      {% endif %}
+
+      <a href="{{ site.url }}" target="_blank" ><div class="social" title="Theme by Iris of Lys"><i class="fas fa-heart"></i></div></a> 
+
+    </div>
+
+	<div class="content">
+
+		{{ content }}
+		
+	</div>
+
+</div>
+
+
+
+
+</body>
+</html>
