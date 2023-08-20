@@ -1,19 +1,19 @@
 # Site Info
-title:              "Cookies & Coffee | Theme by Lys"
-description:        "A static jekyll theme by Lys"
+title:              "Cookies & Coffee | Theme by Liz Lorena"
+description:        "A static jekyll theme by Liz Lorena"
 keywords:           "web design, portfolio, blog, jekyll, theme"
 
 #Custom Settings
 avatar: "/img/logos/cozymaus-2020-transparent-2.png"
-name: "Iris of Lys"
+name: "Liz Lorena Berberena"
 bio: "Web Designer <br><br> This is my cute lil website theme called Cookies & Coffee. Hope you like it."
 #theme: 
 
 # Author Info
-author_name:        "Iris of Lys"
-author_email:       lys@irisoflys.com
-github_username:    irisoflys
-twitter_username:   irisoflys
+author_name:        "Liz Lorena Berberena"
+author_email:       liz@lizlorena.com
+github_username:    lizberberena
+twitter_username:   lorethefour
 instagram_username: ""
 youtube_username:   ""
 
@@ -32,7 +32,7 @@ paginate: 5
 disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: irisoflys
+    shortname: lizlorena
 
 # Site Build
 highlighter: rouge
